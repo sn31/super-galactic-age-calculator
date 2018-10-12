@@ -37,11 +37,12 @@ export class UserAge{
     yearsLeftOnEarth()
     {
         let yearsLeftOnEarth = this.userLifeExpectancy - this.userAgeInYears;
+        let result = `You still have ${yearsLeftOnEarth} years of life expectancy left on Earth!`;
         if (yearsLeftOnEarth < 0)
         {
-            return ("You have live {0} years passed the life expectancy on Earth!",Math.abs(this.yearsLeftOnEarth));
+            result = `You have live ${yearsLeftOnEarth} years passed the life expectancy on Earth!`;
         }
-        return ("You still have {0} years of life expectancy left on Earth!",this.yearsLeftOnEarth);
+        return result;
     }
     yearsLeftOnMercury(){
         let userLifeExpectancyMercury = (this.userLifeExpectancy/0.24);
