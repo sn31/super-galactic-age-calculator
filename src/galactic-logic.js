@@ -53,18 +53,4 @@ export class UserAge {
     }
     return result;
   }
-//   nextBirthdayOnPlanet(planet)
-//   {
-//     let nextYear;
-//     let daysTillNextBD = (Math.ceil(parseFloat(this.calculateEarthAgeInYears())) - parseFloat(this.calculateEarthAgeInYears()))*365;
-//     let daysLeftInYear = 1 - todayDate.getTime()/(1000*31622400);
-//     if (daysTillNextBD > daysLeftInYear)
-//     {
-//         nextYear = todayDate.getFullYear() + 1;
-//     }
-//     else
-//     {
-//         nextYear = todayDate.getFullYear();
-//     }
-//   }
 }
