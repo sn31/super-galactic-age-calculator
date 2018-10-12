@@ -10,6 +10,7 @@ This is an application that determines a user’s age based on a planet’s sola
 
 ## Test Driven Development Specs
 
+* Take in the user's DOB and find the user's age in Earth years.
 * The program will return the user's age in Mercury years. (A Mercury year is .24 Earth years.)
 * The program will return the user's age in Venus years. (A Venus year is .62 Earth years.)
 * The program will return the user's age in Mars years. (A Mars year is 1.88 Earth years.)
