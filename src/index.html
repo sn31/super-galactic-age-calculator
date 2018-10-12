@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    
-    <title>Super Galactic Age Calculator</title>
-  </head>
-  <body>
-   
-  </body>
+
+<head>
+
+  <title>Super Galactic Age Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Calculate your age on different planets</h3>
+    <form id="input" class="form-group">
+      <label>Date of Birth</label>
+      <input type="date" id="inputDOB">
+      <label>Average Life Expectancy</label>
+      <input type="number" id="inputExpectancy">
+
+      <button type="submit">Calculate</button>
+    </form>
+    <div>
+      <h4>Earth</h4>
+      <p id="earthAge">Age: </p>
+      <p id="earthLeft">Years left:</p>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h4>Mercury</h4>
+        <p id="mercuryAge">Age: </p>
+        <p id="mercuryLeft">Years left:</p>
+      </div>
+      <div class="col">
+        <h4>Venus</h4>
+        <p id="venusAge">Age: </p>
+        <p id="venusLeft">Years left:</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h4>Mars</h4>
+        <p id="marsAge">Age: </p>
+        <p id="marsLeft">Years left:</p>
+      </div>
+      <div class="col">
+        <h4>Jupiter</h4>
+        <p id="jupiterAge">Age: </p>
+        <p id="jupiterLeft">Years left:</p>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
