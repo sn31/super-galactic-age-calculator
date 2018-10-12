@@ -4,12 +4,12 @@ export class UserAge{
     constructor (userDOB, userLifeExpectancy)
     {
         this.DOB = new Date(userDOB);
-        this.userAgeInYears = 0;
+        this.userAgeInYears;
         this.userLifeExpectancy = userLifeExpectancy;
-        this.mercuryAge = 0;
-        this.venusAge = 0;
-        this.marchAge = 0;
-        this.jupiterAge = 0;
+        this.mercuryAge;
+        this.venusAge;
+        this.marchAge;
+        this.jupiterAge;
     }
     
     calculateEarthAgeInYears()
