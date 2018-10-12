@@ -8,7 +8,7 @@ export class UserAge{
         this.userLifeExpectancy = userLifeExpectancy;
         this.mercuryAge;
         this.venusAge;
-        this.marchAge;
+        this.marsAge;
         this.jupiterAge;
     }
     
@@ -26,37 +26,42 @@ export class UserAge{
         this.venusAge = (this.userAgeInYears/0.62).toFixed(1);
         return this.venusAge;
     }
-    calculateMarchAge() {
-       this.marchAge = (this.userAgeInYears/1.88).toFixed(1);
-        return this.marchAge;
+    calculateMarsAge() {
+       this.marsAge = (this.userAgeInYears/1.88).toFixed(1);
+        return this.marsAge;
     }
     calculateJupiterAge() {
         this.jupiterAge = (this.userAgeInYears/11.86).toFixed(1);
         return this.jupiterAge;
     }
-    yearsLeftEarth()
+    yearsLeftOnEarth()
     {
-        return this.userLifeExpectancy - this.userAgeInYears;
+        let yearsLeftOnEarth = this.userLifeExpectancy - this.userAgeInYears;
+        if (yearsLeftOnEarth < 0)
+        {
+            return ("You have live {0} years passed the life expectancy on Earth!",Math.abs(this.yearsLeftOnEarth));
+        }
+        return ("You still have {0} years of life expectancy left on Earth!",this.yearsLeftOnEarth);
     }
-    yearsLeftMercury(){
+    yearsLeftOnMercury(){
         let userLifeExpectancyMercury = (this.userLifeExpectancy/0.24);
-        let yearsLeftMercury = (userLifeExpectancyMercury - parseFloat(this.mercuryAge)).toFixed(1);
-        return yearsLeftMercury;
+        let yearsLeftOnMercury = (userLifeExpectancyMercury - parseFloat(this.mercuryAge)).toFixed(1);
+        return yearsLeftOnMercury;
     }
-    yearsLeftVenus(){
+    yearsLeftOnVenus(){
         let userLifeExpectancyVenus = (this.userLifeExpectancy/0.62);
-        let yearsLeftVenus = (userLifeExpectancyVenus - parseFloat(this.venusAge)).toFixed(1);
-        return yearsLeftVenus;
+        let yearsLeftOnVenus = (userLifeExpectancyVenus - parseFloat(this.venusAge)).toFixed(1);
+        return yearsLeftOnVenus;
     }
-    yearsLeftMarch(){
-        let userLifeExpectancyMarch = (this.userLifeExpectancy/1.88).toFixed(1);
-        let yearsLeftMarch = (userLifeExpectancyMarch - parseFloat(this.marchAge)).toFixed(1);        
-        return yearsLeftMarch;
+    yearsLeftOnMars(){
+        let userLifeExpectancyMars = (this.userLifeExpectancy/1.88).toFixed(1);
+        let yearsLeftOnMars = (userLifeExpectancyMars - parseFloat(this.marsAge)).toFixed(1);        
+        return yearsLeftOnMars;
     }
-    yearsLeftJupiter(){
+    yearsLeftOnJupiter(){
         let userLifeExpectancyJupiter = (this.userLifeExpectancy/11.86).toFixed(1);
-        let yearsLeftJupiter = (userLifeExpectancyJupiter - parseFloat(this.jupiterAge)).toFixed(1);
-        return yearsLeftJupiter;
+        let yearsLeftOnJupiter = (userLifeExpectancyJupiter - parseFloat(this.jupiterAge)).toFixed(1);
+        return yearsLeftOnJupiter;
     }
 
 }
