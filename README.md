@@ -15,7 +15,7 @@ This is an application that determines a user’s age based on a planet’s sola
 * The program will return the user's age in Venus years. (A Venus year is .62 Earth years.)
 * The program will return the user's age in Mars years. (A Mars year is 1.88 Earth years.)
 * The program will return the user's age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
-* The program will calculate the user’s life expectancy using average life expectancy for their demographic.
+* The program will calculate the user’s life expectancy on each planet using the average life expectancy for their demographic on Earth.
 * The program will determines how many years a user has left to live on each planet.
 * If a user has already surpassed the average life expectancy, the program will return the number of years they have lived past the life expectancy.
 
